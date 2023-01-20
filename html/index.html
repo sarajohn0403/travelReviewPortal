@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title> Travel Website </title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- FontAweome Link for exchange Icon   code added by suji-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <nav>
+                <a href="../html/index.html"><img src="../images/logo.png" class="logo_Home"></a>
+                <ul>
+                    <li> <a href="../html/index.html"> HOME </a></li>
+                    <li> <a href="../html/about.html"> ABOUT </a></li>
+                    <li> <a href="../html/contact.html"> CONTACT US </a></li>
+                </ul>
+                 <!-- line 29-30 added by suji-->
+                <button class="btn loginbtn" onclick="document.getElementById('login-form').style.display='block'"
+                    style="width:auto;"><img src="../images/icon.png"> Register/Login </button>
+            </nav>
+            <div class="sub-container">
+                <div class="content">
+                    <h1> We plan adventures </h1>
+                    <p> Showing you the world, one County at a time! </p>
+                    <form>
+                        <input type="text" placeholder="Travel site" class="search-form">
+                        <button type="submit" class="btn"> Search </button>
+                    </form>
+                </div>
+                 <!-- Login and registration form code added by suji-->
+                <div id='login-form' class='login-page'>
+                    <div class="form-box">
+                        <label class="close-btn fas fa-times"
+                            onclick="document.getElementById('login-form').style.display='none'"
+                            style="width:auto;"></label>
+                        <div class='button-box'>
+                            <div id='btn'></div>
+                            <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+                            <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+                        </div>
+                        <form id='login' class='input-group-login '>
+                            <input type='text' class='input-field logi-sec' placeholder='Email Id' required>
+                            <input type='password' class='input-field logi-sec' placeholder='Enter Password' required>
+                            <button type='submit' class='submit-btn'>Log in</button>
+                        </form>
+                        <form id='register' class='input-group-register'>
+                            <input type='text' class='input-field logi-sec' placeholder='First Name' required>
+                            <input type='text' class='input-field logi-sec'  placeholder='Last Name ' required>
+                            <input type='email' class='input-field logi-sec' placeholder='Email Id' required>
+                            <input type='password' class='input-field logi-sec' placeholder='Enter Password' required>
+                            <input type='password' class='input-field logi-sec' placeholder='Confirm Password' required>
+                            <button type='submit' class='submit-btn'>Register</button>
+                        </form>
+                    </div>
+                </div>
+                 <!-- end of Login and registration form -->
+            </div>
+        </div>
+    </section>
+
+    <!------ Popular Cities in Staffordshire ------>
+    <section class="city">
+        <h1> Popular cities in Staffordshire </h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="city-box">
+                        <div class="city-img">
+                            <img src="../images/city_alton_new.jpg">
+                        </div>
+
+                        <div class="city-details">
+                            <h3> Alton </h3>
+                            <p> England, United Kingdom </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="city-box">
+                        <div class="city-img">
+                            <img src="../images/city_stoke_new.jpg">
+                        </div>
+
+                        <div class="city-details">
+                            <h3> Stoke-on-Trent </h3>
+                            <p> England, United Kingdom </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="city-box">
+                        <div class="city-img">
+                            <img src="../images/city_tamworth_new.jpg">
+                        </div>
+
+                        <div class="city-details">
+                            <h3> Tamworth </h3>
+                            <p> England, United Kingdom </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="city-box">
+                        <div class="city-img">
+                            <img src="../images/city_burton_new.jpg">
+                        </div>
+
+                        <div class="city-details">
+                            <h3> Burton upon Trent </h3>
+                            <p> England, United Kingdom </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!------------------------dragable image added by suji--------------------->
+        <div class="drag-cnt">
+        <h1> Things to do in Staffordshire </h1>
+        <div class="dragable-sec">
+            <div class="wrapper">
+                <i id="left" class="fas fa-angle-left"></i>
+                <div class="carousel">
+                 <a href="../html/listpage.html"> <img src="../images/outdoor_activities.png" alt="img" draggable="false" onclick='vistPage("Outdoor Activity")'></a>
+                  <img src="../images/food.png" alt="img" draggable="false"> 
+                  <img src="../images/water_bodies.png" alt="img" draggable="false"> 
+                  <img src="../images/wine_nightlife.png" alt="img" draggable="false"> 
+                  <img src="../images/water_parks.png" alt="img" draggable="false"> 
+                  <img src="../images/sightseeing.png" alt="img" draggable="false"> 
+                  <img src="../images/church.png" alt="img" draggable="false"> 
+          
+                </div>
+                <i id="right" class="fas fa-angle-right"></i>
+              </div>
+            </div>
+        </div>
+            <!---------------------------end of dragable image--------------------->
+    <!----- Footer ----->
+    <section class="footer">
+        <hr style="margin: 0px 40px;">
+        <p class="footer-padding"> We are a top level Tourist Association in Staffordshire County <br>
+            We love curating your travel to help you create memories!!
+        </p>
+
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+        <p> Made by Staffordshire Regional Tourist Association <i class="far fa-heart"></i> </p>
+
+    </section>
+      <script src="../js/login.js"></script>
+      <script src="../js/dragable-sec.js"></script>
+      <script src="..js/listpage.js"></script>
+</body>
+
+</html>

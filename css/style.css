@@ -1,0 +1,802 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+
+.header .container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(9,0,60,0.5), rgba(9,0,77,0)),url(../images/background\ _img_2.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 5%;
+}
+.sub-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.logo{
+    width: 12%;
+    cursor: pointer;
+}
+.logo_Home{
+  width: 20%;
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background: #f5168d;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.content{
+    margin-top: 14%;
+    color: #fff;
+    min-width: 620px;
+}
+.content h1{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 85px;
+    margin-bottom: 5px;
+    padding-top: 20px;
+}
+.search-form{
+  background-color: #fff;
+    color: #000;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+.content p{
+    font-style: italic;
+}
+.content form{
+    display: flex;  /*side by side */ 
+    align-items: center;
+    background: #fff;
+    border-radius: 5px; 
+    padding: 10px; 
+    margin-right: 50px;
+    margin-top: 30px;
+}
+.content form input{ 
+    border: 0;
+    outline: 0;
+    width: 100%;
+    font-size: 16px;
+    padding-left: 10px; 
+    
+}
+.content form .btn{
+    font-size: 15px;
+    padding: 10px 30px;
+}
+
+/* Popular cities in Staffordshire */ 
+.city{
+    padding: 50px 0;   /* top=bottom=100px */ 
+}
+.city h1{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 32px;
+    color: #000;
+}
+.row{
+    margin: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+/*
+.col-md-4{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+} */
+.city-img img{
+    width: 100%;
+    padding: 10px;
+}
+.city-img{
+    position: relative;
+}
+.city-details{
+    padding: 20px;  /*5px missing*/
+    text-align: justify;
+}
+.city-details h3{
+    font-weight: 600;
+    margin-top: 20px;   /*not needed*/
+}
+.city-details p{
+    font-size: 11px; 
+    padding-top: 5px; 
+    text-align: justify;
+}
+.city-box{
+    box-shadow: 0 0 10px 1px rgba(37,73,214,0.18);
+    margin-bottom: 30px;
+}
+
+/* Activities to do in Staffordshire */ 
+.activities{
+    padding: 100px 0;
+    background: #efefef;
+}
+.activities h1{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 32px;
+}
+.activity-box img{
+    width: 100%;     /*expected 100% */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.activity-box img:hover
+{
+    transform: scale(1.1);
+}
+.activity-box h4{
+    /*text-align: center; */
+    display: block;
+    color: #fff;
+    text-shadow: -2px 2px 2px #000;
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    top: 70%;       /*expected 50% */ 
+    left: 50%;     /*expected 50% */
+    transform: translate(-50%, -50%);
+}
+.activity-box{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/*---------- contact us page ----------*/
+.location{
+    width: 85%;
+    margin: auto;
+}
+.location iframe{
+    width: 100%;
+}
+.contact-us{
+    width: 85%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fas{
+    font-size: 28px;
+    color: palevioletred;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div p{
+    padding: 0;
+}
+.contact-col div h5{
+    font-size: 17px;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: 400;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.sub-header nav ul li a
+{
+    color: #000;
+    text-decoration: none;
+}
+
+
+/*---------- footer ----------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer-padding{
+  margin-top: 30px
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fab{
+    color: lightcoral;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.far{
+    color: #f44336;
+}
+/* contact us page  */
+
+.contact-container{
+    margin: 3% 0%;
+      width: 100%;
+      text-align: center;
+      color: #f5168d;
+      font-weight: 600;
+  }
+
+.contact-sec{
+    display: flex;
+    margin: 1% 8%;
+    }
+    h3{
+      color: #f5168d;
+    }
+    .contact-rowsec{
+        flex-direction: row;
+    display: flex;
+    }
+    .fa-icon{
+        color: palevioletred;
+    padding-right: 10px;
+    }
+    .text-clr{
+       color: palevioletred;
+       padding: 10px 0;
+       font-weight: 600;
+    }
+    .contact-address{  
+      width: 40%;
+      height: 10%;
+      margin-top: 5%;
+      margin-right: 5%;
+      background: #fff;
+      padding: 25px;
+      border-radius: 3px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+      overflow-wrap: break-word;
+    }
+    .contact-form {
+      display: grid;
+      place-items: center;
+      margin-top: 2rem;
+      width: 65%;
+    }
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+     width: 100%;
+    }
+    .input-group {
+      /* width: 100%; */
+      align-items: center;
+      margin: 5px 0;
+      position: relative;
+    }
+    .input-group span{
+      font-size: 14px;
+      position: absolute;
+      bottom: 30px;
+      right: 15px;
+      color: red;
+    }
+    #submit-requred{
+      width: 100%;
+      flex-direction: row-reverse;
+      margin: -12px;
+      color: red;
+    }
+    .input-group span i{
+      font-size: 20px;
+      color: green;
+      padding-left: 5px;
+    }
+    .wordCount{
+      color: green !important;
+    } 
+    form input,
+    textarea {
+      padding: 15px;
+      border-radius: 0.5rem;
+      width: 100%;
+      border: none;
+      outline: none;
+      background: #fbe7ec;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+    }
+    form input::placeholder,
+    textarea::placeholder {
+      color: var(--text-color);
+    }
+    form textarea {
+      resize: none;
+      height: 200px;
+    }
+    .contact-button {
+      width: 160px;
+      cursor: pointer;
+      border: 1px solid #000;
+      background: var(--main-color);
+      color: #fff;
+      justify-content: center;
+      letter-spacing: 1px;
+      margin-left: 35%;
+    }
+    .contact-button:hover {
+      background: var(--hover);
+    }
+    .btn-margin{
+        margin: 0 42%;
+    }
+    
+/* about us section */
+
+    
+.about{
+    display: flex;
+     border: 100px;
+     padding: 3% 5%;
+     font-size: 16px;
+     font-family: 'Roboto Condensed', sans-serif;   
+   }
+   
+   .column {
+     flex: 50%;
+     padding: 20px;
+    
+   } 
+
+   .first_part{
+    border: 100px;
+    padding: 0;
+    font-size: 16px;
+ 
+  }
+
+  #first{
+    font-size: 36px;
+      text-align: center;
+            color: #f5168d;
+      transition: 1s;
+   }
+
+   #first:hover
+   {
+     transform: scale(1.1);
+   } 
+  #second{
+   color: palevioletred;
+   text-align: center;
+   text-decoration-color: #ee7db9;
+   padding: 10px 0;
+   transition: 1s;
+ }
+ #second:hover
+ {
+   transform: scale(1.1);
+ } 
+ 
+ #third{
+   /* align-content: ju; */
+   text-align: justify;
+   font-size: larger;
+   transition: 1s;
+ }
+ #third:hover
+ {
+   transform: scale(1.1);
+ } 
+
+ .vision{
+    
+     border: 100px;
+     padding-left:100px;
+     padding-right: 100px;
+     font-size: 16px;
+     font-family: 'Roboto Condensed', sans-serif;   
+  
+    
+   }
+   
+  
+   #vis_first{
+    font-size: 36px;
+      text-align: center;
+      text-decoration-color: #ee7db9;
+      color: #f5168d;
+        transition: 1s;
+   } 
+   #vis_first:hover
+   {
+     transform: scale(1.1);
+   } 
+ 
+
+ 
+ #vis_third{
+   /* align-content: ju; */
+   text-align: center;
+   font-size: larger;
+   padding: 0px 300px;
+    transition: 1s;
+ }
+
+ 
+
+   #vis_third:hover
+   {
+     transform: scale(1.1);
+   } 
+ 
+/* details section */
+.detail-container{
+  margin: 6% 0%;
+    width: 100%;
+    text-align: center;
+    color: #f5168d;
+    font-weight: 600;
+}
+.details-sec{
+    display: flex;
+    flex-direction: row;
+}
+.sub-sec{
+   padding: 5px 0;
+}
+.img-sec{
+    width: 50%;
+    align-items: flex-start;
+}
+.contribute-sec{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.comment-sec{
+  border: 1px solid #000;
+    border-radius: 10px;
+    margin: 15px 0 15px 15px;
+    font-size: 10px;
+    padding: 10px;
+}
+.contect-sec{
+    width: 50%;
+    text-align: initial;
+    padding: 0 35px;
+    color: #000;
+    font-weight: 500;
+}
+.rate-sec{
+    color: #f5168d;
+}
+
+/* accordion portion */
+
+h1 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .readme {
+    color: #fff;
+    margin: 0 auto;
+    width: 80%;
+  }
+    .readme  a {
+      color: #00a486;
+    }
+  
+  
+  /*_________________  Accordion
+  ________________________________________*/
+  .accordion {
+    position: relative;
+    margin: 40px auto;
+    width: 100%;
+  }
+  
+  [id*="open-accordion"], [id*="close-accordion"] {
+    background: #f5168d;
+    border-bottom: 1px solid #fff;
+    line-height: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 99%;
+  }
+  
+  [id*="close-accordion"] {
+    display: none;
+  }
+  
+  .accordion a {
+    color: #fff;
+    font-size: 1.25em;
+    font-weight: normal;
+    padding-left: 2%;
+    text-decoration: none;
+    text-shadow: none;
+  }
+  
+  [id*="open-accordion"]:after, [id*="close-accordion"]:after {
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgba(255, 255, 255, 0.6);
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    z-index: 999;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+  }
+  
+  .target-fix {
+    display: block;
+    top: 0;
+    left: 0;
+    position: fixed;
+  }
+  
+  .accordion-content {
+    background: #fff;
+    height: 0;
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    transition: all 0.1s ease;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+  }
+  
+  .accordion span:target ~ .accordion-content {
+    display: block;
+    height: auto;
+    padding-bottom: 25px;
+    padding-top: 10px;
+  }
+  
+  .accordion span:target ~ [id*="close-accordion"] {
+    display: block;
+  }
+  
+  .accordion span:target ~ [id*="open-accordion"] {
+    display: none;
+  }
+  
+  .accordion span:target ~ [id*="close-accordion"]:after {
+    border-top: 10px solid #f5168d;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* Review Filtwr */
+ 
+  h2{
+    color: #f5168d;
+    margin: 3% 0%;
+  }
+  .wrapper-review {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #search-container {
+    margin: 1em 0;
+  }
+  .product-dec{
+    padding: 10px 0px;
+}
+.product-name{
+  padding: 10px 0px;
+  color: #f5168d;
+}
+h6{
+  font-weight: normal;
+}
+  #search-container input {
+    background-color: transparent;
+    width: 40%;
+    border: 2px solid #f5168d;
+    padding: 1em 0.3em;
+  }
+  #search-container input:focus {
+    border: #f5168d;
+  }
+  #search-container button {
+    padding: 1em 2em;
+    margin-left: 1em;
+    background-color: #f5168d;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 0.5em;
+    border: solid #f5168d;
+  }
+  .button-value {
+    border: 2px solid #f5168d;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: #f5168d;
+    cursor: pointer;
+  }
+  .active {
+    background-color: #f5168d;
+    color: #ffffff;
+    border: solid #f5168d;
+  }
+  #products {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1.5em;
+    padding: 2em 0;
+  }
+  .card {
+    background-color: #ffffff;
+    max-width: 18em;
+    margin-top: 1em;
+    padding: 1.5em;
+    border-radius: 5px;
+    box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+  }
+  .container-search {
+    padding-top: 1em;
+    color: #110f29;
+  }
+  .container-search h5 {
+    font-weight: 500;
+  }
+  .hide {
+    display: none;
+  }
+  @media screen and (max-width: 720px) {
+    img {
+      max-width: 100%;
+      object-fit: contain;
+      height: 10em;
+    }
+    .card {
+      max-width: 10em;
+      margin-top: 1em;
+    }
+    #products {
+      grid-template-columns: auto auto;
+      grid-column-gap: 1em;
+    }
+  }
+
+  /* review section */
+#login-requred{
+padding-top: 10px;
+color: #f44336 !important;
+bottom: 0px;
+position: relative;
+}
+  .review-sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .top-portion{
+    text-align: initial;
+    padding: 0px 40px;
+    color: #000;
+  }
+  .imag-sec{
+    width: 40%;
+  }
+  .logi-sec{
+    border: solid 1px #777 !important;
+    padding: 10px !important;
+    border-radius: 20px !important;
+    color: #777 !important;
+  }
+
+/* rating section */
+.rating-container{
+  margin: 2% 17%;
+}
+.rating-head{
+  text-align: initial;
+    padding-left: 15px;
+}
+.rating{
+  position: abolute;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  rotate: 180deg;
+}
+.rating input{
+  display: none;
+}
+.rating label{
+  display: block;
+  cursor: pointer;
+  width: 50px;
+}
+.rating label::before{
+  content: '\f005';
+  font-family: fontAwesome;
+  position: relative;
+  display: block;
+  font-size: 40px;
+  color: #fbe7ec;
+}
+.rating label::after{
+  content: '\f005';
+  font-family: fontAwesome;
+  position: absolute;
+  display: block;
+  font-size: 40px;
+  color: #f5168d;
+  top: 0;
+  opacity: 0;
+  transition: 2s;
+}
+.rating label:hover::after,
+.rating input:hover ~ label::after,
+.rating input:checked ~ label::after{
+  opacity: 1;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title> Travel Website </title>
+    <link rel="stylesheet" href="../css/listpage.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- FontAweome Link for exchange Icon   code added by suji-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <a href="../html/index.html"> <img src="../images/logo.png" class="logo" alt="logo"></a>
+        <div class="bx bx-menu" id="menu-icon"><i class="fa fa-bars"></i> </div>
+        <ul class="navbar">
+            <li><a href="../html/index.html">Home</a></li>
+            <li><a href="../html/about.html">About</a></li>
+            <li><a class="current_page_item" href="../html/listpage.html">Destinations</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Home -->
+    <div class="location">
+        <div class="contact-container">
+            <h2>Make Review</h2>
+            <div class="review-sec">
+                <div class="imag-sec">
+                    <img src="../images/details1.jpg">
+                </div>
+                <div class="top-portion">
+                    <h4>Private Deer Park Tour and Day Out in Leek</h4></span><br>
+                    <h5>Enjoy the rare chance to see British wild deer in their natural habitat
+                        and take photographs of them on this place.</h5><br>
+                    <h5>By: Sprinks farm deer park</h5>
+                </div>
+            </div>
+            <div class="rating-container">
+            <div class="rating-head">
+                <h2>Rate Your Experience</h2>
+            </div>
+            <div class="rating">
+                <input type="radio" name="star" id="star1"><label for="star1"></label>
+                <input type="radio" name="star" id="star2"><label for="star2"></label>
+                <input type="radio" name="star" id="star3"><label for="star3"></label>
+                <input type="radio" name="star" id="star4"><label for="star4"></label>
+            </div>
+        </div>
+            <div class="contact-form" style="margin: 3% 17%;">
+                <form>
+                    <div class="input-group">
+                        <input type="text" placeholder="Enter your name" id="your-name" onkeyup="validateName()">
+                        <span id="name-requred"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="tel" placeholder="Enter Phone Number" id="your-phone" onkeyup="validatePhone()">
+                        <span id="phone-requred"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" placeholder="Enter Email" id="your-email" onkeyup="validateEmail()">
+                        <span id="email-requred"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" placeholder="Give your review a title" id="your-subject"
+                            onkeyup="validateSubject()">
+                        <span id="subjectRequred"></span>
+                    </div>
+                    <div class="input-group">
+                        <textarea rows="5" placeholder="Leave a review" id="your-message"
+                            onkeyup="validateMessage()"></textarea>
+                        <span id="message-requred"></span>
+                    </div>
+                    <div class="input-group">
+                        <button class="btn img btn-margin" onclick="return validateSubmit()">Submit</button>
+                        <span id="submit-requred"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!----- Footer ----->
+
+    <section class="footer">
+        <hr>
+        <p class="footer-padding"> We are a top level Tourist Association in Staffordshire County <br>
+            We love curating your travel to help you create memories!!
+        </p>
+
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+        <p> Made by Staffordshire Regional Tourist Association <i class="far fa-heart"></i> </p>
+
+    </section>
+    <script src="../js/login.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+
+</html>

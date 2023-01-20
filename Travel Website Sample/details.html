@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title> Travel Website </title>
+    <link rel="stylesheet" href="listpage.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+
+    <!-- FontAweome Link for exchange Icon   code added by suji-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <a href="./index.html"> <img src="images/logo.png" class="logo" alt="logo"></a>
+        <div class="bx bx-menu" id="menu-icon"><i class="fa fa-bars"></i> </div>
+        <ul class="navbar">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a class="current_page_item" href="./listpage.html">Destinations</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- List site details -->
+
+    <div class="location">
+        <h2 style="text-align: center;">Things to Do</h2>
+        <div class="details-sec contact-container">
+            <div class="img-sec">
+               <div> <img src="./images/activity-det1.jpg"></div>
+               <br>
+               <h2>Contribute</h2>
+               <br>
+               <div class="contribute-sec">
+                <div class="">
+                   <a href="./review.html"> <button class="btn img">Write Review</button></a>
+                    <span id="submit-requred"></span>
+                </div>
+                <div class="p">
+                    <button class="btn img" onclick="validateLogin()">Upload a Photo</button>
+                    <span id="login-requred"></span>
+                </div>
+               </div>
+            </div>
+            <div class="contect-sec">
+                <div>
+                    <h3>Private Deer Park Tour and Day Out in Leek</h3><br>
+                    <p>By Sprinks farm deer park</p><br>
+                    <div class="rate-sec"> <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i><a href="#"> 6 Reviews </a>
+                    </div><br>
+                    <p>
+                        Enjoy the rare chance to see British wild deer in their natural habitat and take photographs of
+                        them on this private guided walk around a private deer park near Leek. After an introductory
+                        briefing, stroll the park to spot its communities of red and fallow deer. Learn about deer
+                        behaviours, get photography tips, absorb the peaceful fields and Peak District views, and
+                        perhaps get the opportunity to feed the deer.
+                    </p><br>
+                    <hr>
+                   
+
+                </div>
+
+                <div>
+                    <div class="accordion">
+                        <!-- span to target fix closing accordion -->
+                        <span class="target-fix" id="accordion"></span>
+
+                        <!-- First Accoridon Option -->
+                        <div>
+                            <!-- span to target fix accordion -->
+                            <span class="target-fix" id="accordion1"></span>
+
+                            <!-- Link to open accordion, hidden when open -->
+                            <a href="#accordion1" id="open-accordion1" title="open">What to Expect</a>
+
+                            <!-- Link to close accordion, hidden when closed -->
+                            <a href="#accordion" id="close-accordion1" title="close">What to Expect
+                            </a>
+
+                            <!-- Accorion content goes in this div -->
+                            <div class="accordion-content">
+                                <p> Itinerary
+
+                                    Great for a family day out, a valentines treat or team building. What we'll do:
+
+                                    Deer park tour and photography experience.
+
+                                    Have a chance to walk through our deer park and photograph the deer.
+
+                                    We have Red and Fallow deer which can be frequently seen and photographs.
+
+                                    This 1.5 hour tour will include an introduction to British wild deer and a deer park
+                                    tour.
+
+                                    Good waterproof shoes are recommended.
+
+                                    The nature of the park is a space for wild animals and the tour is not suitable for
+                                    people with impaired mobility or very young children.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Second Accoridon Option -->
+                        <div>
+                            <span class="target-fix" id="accordion2"></span>
+                            <a href="#accordion2" id="open-accordion2" title="open">Additional informations</a>
+                            <a href="#accordion" id="close-accordion2" title="close">Additional informations</a>
+                            <div class="accordion-content">
+                                <p>
+                                <ul>
+                                    <li>Travellers should have a moderate physical fitness level</li>
+                                    <li>This experience requires good weather. If it’s cancelled due to poor weather,
+                                        you’ll be offered a different date or a full refund</li>
+                                    <li> This is a private tour/activity. Only your group will participate</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Third Accoridon Option -->
+                        <div>
+                            <span class="target-fix" id="accordion3"></span>
+                            <a href="#accordion3" id="open-accordion3" title="open">Accessibility</a>
+                            <a href="#accordion" id="close-accordion3" title="close">Accessibility</a>
+                            <div class="accordion-content">
+                                <p>
+                                   <ul> <li>Not wheelchair accessible</li></ul>
+If you have questions about accessibility, we’d be happy to help. Just call the number below and reference the product code: 314224P1
++44 12 2492 8241
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Fourth accordion -->
+                          <!-- Second Accoridon Option -->
+                          <div>
+                            <span class="target-fix" id="accordion4"></span>
+                            <a href="#accordion4" id="open-accordion4" title="open">FAQ</a>
+                            <a href="#accordion" id="close-accordion4" title="close">FAQ</a>
+                            <div class="accordion-content">
+                                <p>
+                                   <b>How much is Private Deer Park Tour and Day Out in Leek? </b></p></br> 
+                                    <p>Private Deer Park Tour and Day Out in Leek price starts from 
+                                        £22.59. Discover and book Private Deer Park Tour and Day Out in 
+                                        Leek on Tripadvisor</p><br>
+                                   <b>What is the Private Deer Park Tour and Day Out in Leek cancellation policy?</b><br>
+                                   <p>Private Deer Park Tour and Day Out in Leek cancellation policy: 
+                                    All sales are final and incur 100% cancellation penalties. 
+                                    Discover and book Private Deer Park Tour and Day 
+                                    Out in Leek on Tripadvisor</p> <br>
+                                    <p><b>Which company provides Private Deer Park Tour and Day Out in Leek?</b><br></p>
+                                   <p> Private Deer Park Tour and Day Out in Leek is hosted by Sprinks farm deer park. 
+                                    Read reviews, discover additonal experiences or contact Sprinks farm deer park on 
+                                    Tripadvisor. Discover and book Private Deer Park Tour and Day Out in Leek on 
+                                    Tripadvisor</p><br>
+                                    <p><b>How much time do I need for Private Deer Park Tour and Day Out in Leek?</b></p><br>
+                                    <p>On average, this experience will take approximately 1h 30m. Discover and book Private Deer 
+                                    Park Tour and Day Out in Leek on Tripadvisor</p>
+                                    
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</div>
+<div class="location">
+    <hr>
+    
+<h2>Reviews and Comments</h2>
+    <div class="wrapper-review">
+        <div id="search-container">
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Search review title here.."
+          />
+          <button id="search">Search</button>
+        </div>
+        <div id="buttons">
+          <button class="button-value" onclick="filterProduct('all')">All</button>
+          <button class="button-value" onclick="filterProduct('January')">
+              January
+          </button>
+          <button class="button-value" onclick="filterProduct('December')">
+              December
+          </button>
+          <button class="button-value" onclick="filterProduct('November')">
+            November
+          </button>
+          <button class="button-value" onclick="filterProduct('October')">
+            October
+          </button>
+        </div>
+        <div id="products"></div>
+      </div>
+    
+</div>
+
+        <!----- Footer ----->
+
+        <section class="footer">
+            <hr>
+            <p class="footer-padding"> We are a top level Tourist Association in Staffordshire County <br>
+                We love curating your travel to help you create memories!!
+            </p>
+
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+            <p> Made by Staffordshire Regional Tourist Association <i class="far fa-heart"></i> </p>
+
+        </section>
+        <script src="./login.js"></script>
+        <script src="./listpage.js"></script>        
+      <!-- Script -->
+      <script src="product.js"></script>
+</body>
+
+</html>

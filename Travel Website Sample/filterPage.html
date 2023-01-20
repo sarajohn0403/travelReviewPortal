@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title> Travel Website </title>
+    <link rel="stylesheet" href="listpage.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+
+    <!-- FontAweome Link for exchange Icon   code added by suji-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <a href="./index.html"> <img src="images/logo.png" class="logo" alt="logo"></a>
+        <div class="bx bx-menu" id="menu-icon"><i class="fa fa-bars"></i> </div>
+        <ul class="navbar">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a class="current_page_item" href="./listpage.html">Destinations</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- List site details -->
+
+    <div class="container">
+        <div class="left-col">
+            <p>50+ Options</p>
+            <h1 id="head_name">Recomended places for visit</h1>
+            <div class="item">
+                <div class="item-image">
+                    <img src="./images/activity1.jpg">
+                </div>
+                <div class="item-info">
+                    <h3><a href="./details.html">
+                        Private Deer Park Tour and Day Out in Leek </a></h3>
+                    <p>By Sprinks farm deer park</p>
+                    <p><b>Location:</b> Stock</p>
+                    <div>   <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i></div>
+                    <p>We think our reviews speak for themselves:
+                        "Excellent experience! A totally unique experience in a beautiful place. Eddie… </p>
+                 
+                    <div class="info-btn">
+                        <button class="btn loginbtn"><a href="./details.html">View More</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-image">
+                    <img src="./images/victoria.jpg">
+                </div>
+                <div class="item-info">
+                    <h3><a href="./details.html">
+                        Victoria Park</a>
+                    </h3>
+                    <p>By Diane Carter</p>
+                    <p><b>Location:</b> Stock</p>
+                 <div>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Great town park, with attractively laid out flower birds. A stream runs through with pretty bridges over it. Lots of benches to sit and relax. Aviaries with exotic pheasants. Just over the road from the railway station and close to the centre of town..</p>
+
+                    </p>
+                    <div class="info-btn">
+                        <button class="btn loginbtn">View More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-image">
+                    <img src="./images/trentham.jpg">
+                </div>
+                <div class="item-info">
+                    <h3><a href="./details.html">
+                        Trentham Gardens </a></h3>
+                    <p>By Diane Carter</p>
+                    <p><b>Location:</b> Stock</p>
+                   <div> <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i></div>                    
+                    <p>The Trentham Estate is home to the award-winning Trentham Gardens featuring The Italian Garden by Tom Stuart-Smith...</p>
+
+                    </p>
+                    <div class="info-btn">
+                        <button class="btn loginbtn">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-col">
+            <div class="sidebar">
+                <h2>Select Filter</h2>
+                <h3>Place Type</h3>
+                <div class="filter">
+                    <input type="checkbox" checked>
+                    <p>Park</p>
+                </div>
+                <div class="filter">
+                    <input type="checkbox">
+                    <p>Resturent</p>
+                </div>
+                <div class="filter">
+                    <input type="checkbox">
+                    <p>Museum</p>
+                </div>
+                <div class="filter">
+                    <input type="checkbox">
+                    <p>Historical Place</p>
+                </div>
+
+                <h3>Area Type</h3>
+                <div class="filter">
+                    <input type="checkbox" checked>
+                    <p>stock</p>
+                </div>
+                <div class="filter">
+                    <input type="checkbox">
+                    <p>Buton</p>
+                </div>
+                <div class="filter">
+                    <input type="checkbox">
+                    <p>Alton</p>
+                </div>
+                <div class="filter">
+                    <input type="checkbox">
+                    <p>Tamworth</p>
+                </div>
+                <div class="sidebar-link">
+                    <a href="./listpage.html">Filter Here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- pagination -->
+    <div class="pagination">
+        <div class="arrow"> <i id="left" class="fas fa-angle-left"></i></div>
+        <span class="current">1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>&middot; &middot; &middot; </span>
+        <span>7</span>
+        <div class="arrow"><i id="right" class="fas fa-angle-right"></i>
+        </div>
+    </div>
+    <!----- Footer ----->
+
+    <section class="footer">
+        <hr>
+        <p class="footer-padding"> We are a top level Tourist Association in Staffordshire County <br>
+            We love curating your travel to help you create memories!!
+        </p>
+
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+        <p> Made by Staffordshire Regional Tourist Association <i class="far fa-heart"></i> </p>
+
+    </section>
+    <script src="./login.js"></script>
+    <script src="./listpage.js"></script>
+</body>
+
+</html>

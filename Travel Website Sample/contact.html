@@ -1,126 +1,128 @@
 <!DOCTYPE html>
-<html> 
+<html>
+
 <head>
-    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
     <title> Travel Website </title>
+    <link rel="stylesheet" href="listpage.css">
+    <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?
-    family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,300&display=swap" 
-    rel="stylesheet">
+    family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
 
-    <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
-        crossorigin="anonymous"
-    />
-
+    <!-- FontAweome Link for exchange Icon   code added by suji-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
+
 <body>
 
-<!------- Sub-Header ------->
-<section class="sub-header"> 
-        <nav>
-            <a href="index.html"><img src="images/logo.png" class="logo"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="far fa-times" onclick="hideMenu()"></i>
-                 <ul>
-                    <li> <a href="index.html"> HOME </a></li> 
-                    <li> <a href="about.html"> ABOUT </a></li> 
-                    <li> <a href="contact.html"> CONTACT </a></li> 
-                 </ul>
-            </div>
-            <i class="far fa-bars" onclick="showMenu()"></i>
-        </nav>
-        <h1> Contact Us </h1>
-</section>
+    <!-- Navbar -->
+    <header>
+        <a href="./index.html"> <img src="images/logo.png" class="logo" alt="logo"></a>
+        <div class="bx bx-menu" id="menu-icon"><i class="fa fa-bars"></i> </div>
+        <ul class="navbar">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./listpage.html">Destinations</a></li>
+            <li><a class="current_page_item" href="./contact.html">Contact</a></li>
+        </ul>
+    </header>
 
-<!------- Contact us ------->
-<section class="location">
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d151986.73738035563!2d-2.3635454041325272!3d53.472163544921486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1647211934090!5m2!1sen!2suk" width="600" height="450" 
-    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-</section>
-
-<section class="contact-us">
-
-    <div class="row">
-        <div class="contact-col">
-            <div>
-                <i class="fas fa-home"></i>
-                <span>
-                    <h5>XYZ Road, Staffordshire Regional Tourist Association </h5>
-                    <p>Stoke-on-Trent, Staffordshire, UK</p>
-                </span>
-            </div>
-
-            <div>
-                <i class="fas fa-phone-alt"></i>
-                <span>
-                    <h5>+44 XXXXXXXXXX</h5>
-                    <p>Monday to Friday, 8AM to 5PM <br> </p>
-                    <p>Saturday & Sunday, 10AM to 4PM</p>
-                </span>
-            </div>
-
-            <div>
-                <i class="fas fa-envelope"></i>
-                <span>
-                    <h5>info@srtassociation.com</h5>
-                    <p>Email us for any queries!</p>
-                </span>
-            </div>
-
+    <!-- Home -->
+    <div class="">
+        <div class="contact-container">
+            <h2>Connect with Us</h2>
         </div>
-        <div class="contact-col">
+        <section class="location">
+          <iframe width="950" height="470" id="gmap_canvas"
+           src="https://maps.google.com/maps?q=staffordshire&t=&z=9&ie=UTF8&iwloc=&output=embed" 
+           frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          <style>.mapouter{position:relative;text-align:right;height:500px;width:869px;}</style>
+         <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:869px;}</style>
+        </section>
+        <section class="contact" id="contact-pg">
+            <div class="contact-sec">
+                <div class="contact-address">
+                    <h3>Contact Deatils</h3><br>
+                    <div class="text-clr">Contact Address:</div>
+                    <div class="contact-rowsec">
+                        <div> <i class="fas fa-home fa-icon"></i></div>
+                        <div>XYZ Road, Staffordshire Regional Tourist Association <br>
+                            Stoke-on-Trent, Staffordshire, UK <br>
+                        </div>
+                    </div>
+                    <div class="text-clr">Contact Number:</div>
+                    <div class="contact-rowsec">
+                       <div> <i class="fas fa-phone-alt fa-icon"></i></div>
+                        <div>
+                            +44 XXXXXXXXXX<br>
+                            <p>Monday to Friday, 8AM to 5PM <br> </p>
+                            <p>Saturday & Sunday, 10AM to 4PM</p>
+                        </div>
+                    </div>
+                    <div class="text-clr">Email:</div>
+                    <div class="contact-rowsec">
+                       <div> <i class="fas fa-envelope fa-icon"></i></div>
+                        <div>info@srtassociation.com
+                        </div><br>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" placeholder="Enter your name" id="your-name" onkeyup="validateName()">
+                            <span id="name-requred"></span>
+                        </div>
 
-            <form action="Form_handler.php" method="post">
-                <input type="text" name="name" placeholder="Enter your name" required>
-                <input type="email" name="email" placeholder="Enter your email address" required>
-                <input type="phone number" name="phone" placeholder="Enter your phone number" required>
-                <textarea rows="8" name="message" placeholder="Message" required></textarea>
-                <button type="submit" class="btn1 red-btn"> Send Message</button>
-            </form>
-        </div>
+                        <div class="input-group">
+                            <input type="tel" placeholder="Enter Phone Number" id="your-phone"
+                                onkeyup="validatePhone()">
+                            <span id="phone-requred"></span>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="email" placeholder="Enter Email" id="your-email" onkeyup="validateEmail()">
+                            <span id="email-requred"></span>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" placeholder="Enter your subject" id="your-subject"
+                                onkeyup="validateSubject()">
+                            <span id="subjectRequred"></span>
+                        </div>
+                        <div class="input-group">
+                            <textarea rows="5" placeholder="Enter your message" id="your-message"
+                                onkeyup="validateMessage()"></textarea>
+                            <span id="message-requred"></span>
+                        </div>
+                        <div class="input-group">
+                            <button class="btn img btn-margin" onclick="return validateSubmit()">Submit</button>
+                            <span id="submit-requred"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </div>
 
-</section>
+    <section class="footer">
+        <hr>
+        <p class="footer-padding"> We are a top level Tourist Association in Staffordshire County <br>
+            We love curating your travel to help you create memories!!
+        </p>
 
-<!----- Footer ----->
-<section class="footer">
-    <h4> About Us </h4> 
-    <p> We are a top level Tourist Association in Staffordshire County <br>
-        We love curating your travel to help you create memories!! 
-    </p>
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+        <p> Made by Staffordshire Regional Tourist Association <i class="far fa-heart"></i> </p>
 
-    <div class="icons">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-youtube"></i>
-    </div>
-    <p> Made by Staffordshire Regional Tourist Association <i class="far fa-heart"></i> </p>
-
-</section>
-
-<!----
- Javascript for Toggle Menu on small screen 
-<script>
-    var navLinks = document.getElementById("navLinks");
-
-    function showMenu()
-    {
-        navLinks.style.right = "0";
-    }
-
-    function hideMenu()
-    {
-        navLinks.style.right = "-200px";
-    }
-
-</script> ---->
-    
+    </section>
+    <script src="./login.js"></script>
+    <script src="./contact.js"></script>
 </body>
+
 </html>

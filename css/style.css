@@ -800,3 +800,21 @@ position: relative;
 .rating input:checked ~ label::after{
   opacity: 1;
 }
+/* post page */
+
+.post-sec{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.post-form{
+  width: 100%;
+    padding-left: 6%;
+}
+
+.post-form form textarea{
+height: auto;
+}
+.image-upload{
+  margin-top: 30px;
+}
